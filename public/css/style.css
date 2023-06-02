@@ -1,37 +1,51 @@
-body{
+body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     background-color: black;
 }
-#divText{
+
+#divText {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-#textBoard{
+
+#textBoard {
     width: 400px;
     height: 400px;
     border-radius: 5%;
     border: solid 2px white;
     margin-top: 5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-#msj{
+
+#msj {
     width: 400px;
     border: solid 2px white;
 }
 
-.none{
+.none {
     display: none;
 }
-#divName{
+
+#divName {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    #textBoard{
+        width: 250px;
+    }
+    #msj{
+        width: 250px;
+    }
 }
